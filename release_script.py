@@ -7,7 +7,7 @@ def update_file(version_code: str, checksum: str):
     original_file = open("Package.swift", "r")
     list_of_lines = original_file.readlines()
 
-    list_of_lines[22] = f"            url: \"https://github.com/Flowsense/SDKiOS-SP/releases/download/" \
+    list_of_lines[22] = f"            url: \"https://github.com/Flowsense/iOSFlowsenseSPM/releases/download/" \
                         f"{version_code}/SDK_{version_code}.zip\",\n"
     list_of_lines[23] = f"            checksum: \"{checksum}\"\n"
 
@@ -27,7 +27,7 @@ def git_push(message: str, tag_name: str):
 
 
 def calculate_checksum(version_name: str):
-    # swift package compute-checksum ../SDKiOS-SP/frameworks/FlowsenseSDK.xcframework.zip
+
     command = f"swift package compute-checksum ../SDKFlowsenseiOS/build/SDK_{version_name}.zip"
     output = subprocess.run(command, capture_output=True, shell=True)
     output = output.stdout.decode("utf-8").strip()
