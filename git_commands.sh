@@ -16,7 +16,7 @@ done
 
 git add .
 git commit -m "$MESSAGE" --quiet
-git push origin main --quiet
+git push -u origin main --quiet
 gh release create $VERSION ../SDKFlowsenseiOS/build/SDK_$VERSION.zip
 
 
