@@ -1,3 +1,3 @@
-# iOSFlowsenseSPM
+# Flowsense's SDK for iOS
 
-A description of this package.
+Swift package for Flowsense's SDK
