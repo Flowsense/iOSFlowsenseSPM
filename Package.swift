@@ -20,8 +20,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "FlowsenseSDK",
-            url: "https://github.com/Flowsense/iOSFlowsenseSPM/releases/download/4.1.2/SDK_4.1.2.zip",
-            checksum: "76a3457dbeba2ad4b6856b32bd17d0cfe2c482675833520627dbfe8efa587696"
+            url: "https://github.com/Flowsense/iOSFlowsenseSPM/releases/download/4.1.3/SDK_4.1.3.zip",
+            checksum: "8890c658153271edc642fb9689673f91ee937cffc12aa6c3261216fc52fb5af5"
         ),
         .target(name: "iOSFlowsenseSPMTargets",
                 dependencies: [
